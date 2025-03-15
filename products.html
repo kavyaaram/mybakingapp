@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Cakes, Cupcakes, and Cookies</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Your Logo" class="logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> <span class="cart-count">(0)</span> Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h1>Our Delicious Products</h1>
+        
+        <!-- Buttercream Cakes -->
+        <div class="category">
+            <h2>Buttercream Cakes</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <h3>Vanilla Bean</h3>
+                    <p>Vanilla sponge with white choc ganache and vanilla bean buttercream.</p>
+                    <button class="add-to-cart" onclick="addToCart('Vanilla Bean')">Add to Cart</button> 
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <h3>Double Chocolate</h3>
+                    <p>Choc cake with dark/milk choc ganache and choc buttercream.</p>
+                    <button class="add-to-cart" onclick="addToCart('Double Chocolate')">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <h3>Red Velvet</h3>
+                    <p>Red velvet cake with cream cheese layers.</p>
+                    <button class="add-to-cart" onclick="addToCart('Red Velvet')">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <h3>Butterscotch</h3>
+                    <p>Layers of caramel cake with salted butterscotch drizzle and nuts praline.</p>
+                    <button class="add-to-cart" onclick="addToCart('Butterscotch')">Add to Cart</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <h3>Ferrero Rocher</h3>
+                    <p>Rich chocolate cake with Nutella frosting and hazelnut crunch.</p>
+                    <button class="add-to-cart" onclick="addToCart('Ferrero Rocher')">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <h3>Tiramisu</h3>
+                    <p>Layers of coffee-soaked sponge and mascarpone.</p>
+                    <button class="add-to-cart" onclick="addToCart('Tiramisu')">Add to Cart</button>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product-card">
+                    <h3>Rasmalai</h3>
+                    <p>Saffron, cardamom, and pista milk-soaked sponge with rasmalai pieces in every layer.</p>
+                    <button class="add-to-cart" onclick="addToCart('Rasmalai')">Add to Cart</button>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product-card">
+                    <h3>Lemon Blueberry</h3>
+                    <p>Zesty lemon cake with blueberry compote.</p>
+                    <button class="add-to-cart" onclick="addToCart('Lemon blueberry')">Add to Cart</button>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product-card">
+                    <h3>Pistachio & Raspberry</h3>
+                    <p>Pistachio cake with raspberry preserves and cream.</p>
+                    <button class="add-to-cart" onclick="addToCart('Pistachio raspberry')">Add to Cart</button>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product-card">
+                    <h3>Vanilla & Strawberry</h3>
+                    <p>Vanilla sponge with strawberry compote and mousse filling.</p>
+                    <button class="add-to-cart" onclick="addToCart('vanilla strawberry')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fresh Cream (Chiffon Cakes) -->
+        <div class="category">
+            <h2>Fresh Cream (Chiffon Cakes)</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <h3>Black Forest</h3>
+                    <p>Chocolate cake with cherries and whipped cream.</p>
+                    <button class="add-to-cart" onclick="addToCart('Black Forest')">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <h3>Mango</h3>
+                    <p>Tropical mango pulp infused cream with vanilla sponge.</p>
+                    <button class="add-to-cart" onclick="addToCart('Mango')">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <h3>Ube</h3>
+                    <p>Ube chiffon cake with coconut strings filling and ube mousse.</p>
+                    <button class="add-to-cart" onclick="addToCart('Ube')">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <h3>Pineapple</h3>
+                    <p>Pineapple puree layers with fresh cream and vanilla sponge.</p>
+                    <button class="add-to-cart" onclick="addToCart('Pineapple')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cupcakes -->
+        <div class="category">
+            <h2>Cupcakes</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <h3>Vanilla</h3>
+                    <p>Delicious vanilla-flavored cupcakes.</p>
+                    <button class="add-to-cart" onclick="addToCart('Vanilla')">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <h3>Decadent Chocolate</h3>
+                    <p>Rich chocolate cupcakes with a creamy finish.</p>
+                    <button class="add-to-cart" onclick="addToCart('Decadent Chocolate')">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <h3>Hazelnut</h3>
+                    <p>Delicious hazelnut-flavored cupcakes.</p>
+                    <button class="add-to-cart" onclick="addToCart('Hazelnut')">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <h3>Lemon</h3>
+                    <p>Fresh and zesty lemon cupcakes.</p>
+                    <button class="add-to-cart" onclick="addToCart('Lemon')">Add to Cart</button>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <h3>Carrot</h3>
+                    <p>Spiced carrot cupcakes with cream cheese frosting.</p>
+                    <button class="add-to-cart" onclick="addToCart('Carrot')">Add to Cart</button>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <h3>Red Velvet</h3>
+                    <p>Classic red velvet cupcakes with cream cheese frosting.</p>
+                    <button class="add-to-cart" onclick="addToCart('Red Velvet')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookies -->
+        <div class="category">
+            <h2>Cookies</h2>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <h3>Pistachio Chocolate</h3>
+                    <p>Crunchy pistachio cookies with chocolate chunks.</p>
+                    <button class="add-to-cart" onclick="addToCart('Pistachio')">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <h3>Double Chocolate Chip</h3>
+                    <p>Delicious double chocolate chip cookies.</p>
+                    <button class="add-to-cart" onclick="addToCart('Chocolate')">Add to Cart</button>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <h3>Red Velvet White Chocolate</h3>
+                    <p>Red velvet cookies with white chocolate chunks.</p>
+                    <button class="add-to-cart" onclick="addToCart('Red Velvet')">Add to Cart</button>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <h3>Walnut Chocolate Chip</h3>
+                    <p>Classic walnut and chocolate chip cookies.</p>
+                    <button class="add-to-cart" onclick="addToCart('Walnut Chocolate Chip')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <script src="/js/cart.js" defer></script>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Crème Cloud LLC</p>
+    </footer>
+</body>
+</html>
